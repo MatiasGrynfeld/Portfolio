@@ -1,5 +1,5 @@
 import './Portada.css'
-import CVIcon from './CVIcon'
+import CVIcon from '../components/CVIcon'
 
 function Portada() {
   return (

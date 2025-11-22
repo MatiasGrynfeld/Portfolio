@@ -1,7 +1,7 @@
 import './css/general.css'
-import Portada from './components/Portada'
-import Principal from './components/Principal'
-import Contacto from './components/Contacto'
+import Portada from './secciones/Portada'
+import Principal from './secciones/Principal'
+import Contacto from './secciones/Contacto'
 
 function App() {
   return (

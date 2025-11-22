@@ -1,6 +1,6 @@
 import './Principal.css'
-import PanelLateral from './PanelLateral'
-import Seccion1 from './Seccion1'
+import PanelLateral from '../components/PanelLateral'
+import QuienSoy from './QuienSoy'
 import Seccion2 from './Seccion2'
 import Seccion3 from './Seccion3'
 import Seccion4 from './Seccion4'
@@ -13,7 +13,7 @@ function Principal() {
         <PanelLateral />
       </div>
       <div className="contenido-container">
-        <Seccion1 />
+        <QuienSoy />
         <Seccion2 />
         <Seccion3 />
         <Seccion4 />

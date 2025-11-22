@@ -1,0 +1,21 @@
+.quien-soy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5%;
+  gap: 2rem;
+}
+
+.quien-soy-parrafo {
+  color: var(--Texto);
+  font-size: 28px;
+  font-weight: 400;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.quien-soy-parrafo .highlight {
+  color: var(--Elementos-Graficos);
+  font-size: 28px;
+  font-weight: 700;
+}
