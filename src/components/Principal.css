@@ -1,0 +1,13 @@
+.principal {
+  display: flex;
+  border: 2px solid red;
+}
+
+.panel-container {
+  width: 30%;
+  position: relative;
+}
+
+.contenido-container {
+  width: 70%;
+}

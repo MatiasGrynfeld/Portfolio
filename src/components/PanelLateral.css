@@ -1,0 +1,9 @@
+.panel-lateral {
+  position: sticky;
+  top: 10vh;
+  height: 80vh;
+  padding: 5%;
+  border: 2px solid red;
+  margin: 5%;
+  box-sizing: border-box;
+}
