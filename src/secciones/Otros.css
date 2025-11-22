@@ -1,0 +1,45 @@
+.otros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5%;
+  gap: 2rem;
+}
+
+.otros-seccion {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.otros-subtitulo {
+  color: var(--Texto);
+  font-size: 48px;
+  font-weight: 500;
+  text-decoration: underline;
+  margin: 0;
+}
+
+.otros-lista {
+  list-style: disc;
+  padding-left: 2rem;
+  margin: 0;
+}
+
+.otros-lista li {
+  color: var(--Texto);
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+}
+
+.otros-lista li::marker {
+  color: var(--Elementos-Graficos);
+}
+
+.otros-lista .highlight {
+  color: var(--Elementos-Graficos);
+  font-size: 32px;
+  font-weight: 700;
+}

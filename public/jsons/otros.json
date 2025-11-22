@@ -1,0 +1,25 @@
+{
+    "Logros": {
+        "items":[
+            "5to puesto en la Olimpiada Informática Argentina (certamen nacional, 2024).",
+            "Mención “Best Use of Technology” en el NASA Space Apps Challenge.",
+            "Escolta de la Bandera Argentina en ORT, por haber tenido el tercer mejor promedio."
+        ],
+        "highlight": [
+            "Olimpiada Informática Argentina",
+            "NASA Space Apps Challenge",
+            "Escolta de la Bandera Argentina"
+        ]
+    },
+    "Extracurricular": {
+        "items":[
+            "Toco el piano desde los seis años, actividad de entretenimiento y disciplina personal.",
+            "Compito en vóley a un nivel alto, lo que me ayuda a mantenerme en forma, a ser constante y a desarrollar pensamiento crítico."
+        ],
+        "highlight": [
+            "piano",
+            "entretenimiento y disciplina personal",
+            "vóley"
+        ]
+    }
+}

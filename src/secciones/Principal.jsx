@@ -1,10 +1,10 @@
 import './Principal.css'
 import PanelLateral from '../components/PanelLateral'
-import QuienSoy from '../secciones/QuienSoy'
-import Habilidades from '../secciones/Habilidades'
-import Seccion3 from '../secciones/Seccion3'
-import Proyectos from '../secciones/Proyectos'
-import Seccion5 from '../secciones/Seccion5'
+import QuienSoy from './QuienSoy'
+import Habilidades from './Habilidades'
+import Seccion3 from './Seccion3'
+import Proyectos from './Proyectos'
+import Otros from './Otros'
 
 function Principal() {
   return (
@@ -17,7 +17,7 @@ function Principal() {
         <Habilidades />
         <Seccion3 />
         <Proyectos />
-        <Seccion5 />
+        <Otros />
       </div>
     </main>
   )
