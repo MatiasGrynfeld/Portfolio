@@ -1,0 +1,14 @@
+.habilidades {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5%;
+  gap: 3rem;
+}
+
+.habilidades-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2rem;
+}

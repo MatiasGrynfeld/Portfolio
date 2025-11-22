@@ -1,0 +1,45 @@
+.card-habilidad {
+  border-radius: 91px;
+  border: 5px solid var(--Elementos-Graficos);
+  background: #FFF;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.card-habilidad-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card-habilidad-icono {
+  width: 60px;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+}
+
+.card-habilidad-subtitulo {
+  color: var(--Texto-Secundario);
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.card-habilidad-lista {
+  list-style: disc;
+  padding-left: 2rem;
+  margin: 0;
+}
+
+.card-habilidad-lista li {
+  color: var(--Texto);
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.card-habilidad-lista li::marker {
+  color: var(--Elementos-Graficos);
+}

@@ -1,0 +1,38 @@
+{
+    "cards": [
+        {
+            "icon_path": "/dataScienceIcon.png",
+            "title": "Data Science",
+            "skills": [
+                "Python.",
+                "Data cleaning and data presentation.",
+                "Pandas, Polars, NumPy, Scikit-Learn, Matplotlib, Seaborn."
+            ]
+        },
+        {
+            "icon_path": "/aiEngineerIcon.png",
+            "title": "Data Science",
+            "skills": [
+                "Pytorch, Weights And Biases, OpenCV.",
+                "Computer Vision, Natural Language Processing, Decision Trees, Clustering."
+            ]
+        },
+        {
+            "icon_path": "/languageIcon.png",
+            "title": "Data Science",
+            "skills": [
+                "Español.",
+                "Inglés (C1)."
+            ]
+        },
+        {
+            "icon_path": "/otherIcon.png",
+            "title": "Data Science",
+            "skills": [
+                "Trabajo en equipo, buena comunicación.",
+                "Git y GitHub.",
+                "Algo de experiencia en C# y Arduino."
+            ]
+        }
+    ]
+}
