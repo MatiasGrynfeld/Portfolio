@@ -1,0 +1,23 @@
+.contact-card {
+  border-radius: 39px;
+  border: 9px solid var(--Elementos-Graficos);
+  background: #FFF;
+  aspect-ratio: 377 / 199;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.contact-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(2, 137, 75, 0.2);
+}
+
+.contact-card img {
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: contain;
+}

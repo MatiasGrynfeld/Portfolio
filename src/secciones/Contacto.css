@@ -1,4 +1,51 @@
 .contacto {
   height: 100vh;
   border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacto-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.contacto-texto {
+  color: var(--Texto);
+  width: 80%;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 400;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.contacto-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.contacto-fila-3 {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.contacto-fila-2 {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.contacto-fila-3 .contact-card,
+.contacto-fila-2 .contact-card {
+  width: 20vw;
 }
