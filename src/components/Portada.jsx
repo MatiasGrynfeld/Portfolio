@@ -1,4 +1,5 @@
 import './Portada.css'
+import CVIcon from './CVIcon'
 
 function Portada() {
   return (
@@ -15,9 +16,7 @@ function Portada() {
         <a href="#" className="icono">
           <img src="/linkedinIcon.png"/>
         </a>
-        <a href="#" className="icono" id='CV_icon'>
-          CV
-        </a>
+        <CVIcon size={80} />
       </div>
       <button className="boton-empezar">Empezar</button>
     </header>

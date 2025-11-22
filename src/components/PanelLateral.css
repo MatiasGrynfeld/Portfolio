@@ -1,9 +1,217 @@
 .panel-lateral {
   position: sticky;
-  top: 10vh;
-  height: 80vh;
+  top: 8vh;
+  height: 84vh;
   padding: 5%;
-  border: 2px solid red;
   margin: 5%;
+  margin-left: 10%;
   box-sizing: border-box;
+  border-radius: 46px;
+  background: var(--Detalles);
+  display: flex;
+  flex-direction: column;
+}
+
+.seccion-perfil {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.foto-perfil {
+  width: 200px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border: 2px solid red;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.foto-perfil img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.nombre-perfil {
+  margin: 0;
+  text-align: center;
+  color: var(--Texto);
+  text-align: center;
+  font-size: 48px;
+  font-weight: 600;
+  text-decoration: underline solid;
+}
+
+.seccion-navegacion {
+  height: 21%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.columna-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.columna-nav a {
+  text-decoration: none;
+  color: var(--Texto-Secundario);
+  text-align: center;
+  font-size: 28px;
+  font-weight: 400;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.columna-nav a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 50%;
+  background-color: var(--Elementos-Graficos);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.columna-nav a:hover {
+  color: var(--Elementos-Graficos);
+  transform: scale(1.1);
+}
+
+.columna-nav a:hover::after {
+  width: 100%;
+}
+
+.seccion-info {
+  height: 11%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.icono-info {
+  width: 70px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.icono-info:hover {
+  transform: scale(1.1);
+}
+
+.icono-info img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+.icono-info:hover img {
+  transform: scale(1.1);
+}
+
+.texto-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.titulo-info {
+  margin: 0;
+  color: var(--Texto);
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.contenido-info {
+  margin: 0;
+  color: var(--Texto-Secundario);
+  font-size: 26px;
+  font-weight: 400;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.contenido-info::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 50%;
+  background-color: var(--Elementos-Graficos);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.contenido-info:hover {
+  color: var(--Elementos-Graficos);
+  transform: scale(1.05);
+}
+
+.contenido-info:hover::after {
+  width: 100%;
+}
+
+.seccion-iconos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  flex: 1;
+}
+
+.icono-social {
+  width: 80px;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.icono-social:hover {
+  transform: scale(1.15);
+}
+
+.icono-social img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: all 0.3s ease;
+}
+
+.icono-social:hover img {
+  filter: brightness(1.2);
+}
+
+.separador {
+  height: 2px;
+  width: 95%;
+  min-height: 2px;
+  background-color: black;
+  align-self: center;
+  margin: 0.5rem 0;
 }
