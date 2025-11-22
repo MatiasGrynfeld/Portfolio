@@ -1,4 +1,67 @@
 .portada {
   height: 100vh;
   border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.logo {
+  
+}
+
+.nombre {
+  color: var(--Elementos-Graficos);
+  text-align: center;
+  font-size: 96px;
+  font-weight: 600;
+}
+
+.lema {
+  color: var(--texto);
+  text-align: center;
+  font-size: 64px;
+  font-weight: 400;
+}
+
+.iconos {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.icono {
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+  aspect-ratio: 1/1;
+}
+
+.boton-empezar {
+  width: 539px;
+  height: 176px;
+  flex-shrink: 0;
+  background: var(--Elementos-Graficos);
+  border-radius: 104px;
+  cursor: pointer;
+  color: var(--Fondo, #F6F7F5);
+  text-align: center;
+  font-size: 80px;
+  font-weight: 700;
+  border: none;
+}
+
+#CV_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 36.571px;
+  font-weight: 800;
+  text-decoration: none;
+  color: var(--Elementos-Graficos);
+  border: 4.238px solid var(--Elementos-Graficos);
+  background-color: #FFF;
 }

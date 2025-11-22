@@ -1,10 +1,10 @@
 :root {
-  --fondo: #F6F7F5;
-  --texto: #1C1C1C;
-  --texto-secundario: #555C59;
-  --elementos-graficos: #02894B;
-  --detalles: #A9D7BA;
-  --soportes: #D8E0DA;
+  --Fondo: #F6F7F5;
+  --Texto: #1C1C1C;
+  --Texto-Secundario: #555C59;
+  --Elementos-Graficos: #02894B;
+  --Detalles: #A9D7BA;
+  --Soportes: #D8E0DA;
 }
 
 * {
