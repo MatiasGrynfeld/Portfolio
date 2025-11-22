@@ -1,0 +1,87 @@
+.card-proyecto {
+  width: 100%;
+  max-width: 509px;
+  aspect-ratio: 509 / 396;
+  border-radius: clamp(40px, 8vw, 91px);
+  border: 4px solid var(--Elementos-Graficos);
+  background: #FFF;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.card-proyecto-imagen {
+  height: 48%;
+  width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.card-proyecto-imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card-proyecto-contenido {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 clamp(1rem, 3vw, 1.5rem);
+  justify-content: space-evenly;
+}
+
+.card-proyecto-titulo {
+  color: var(--Texto);
+  text-align: center;
+  font-size: clamp(24px, 3.5vw, 42.199px);
+  font-weight: 700;
+  margin: 0;
+}
+
+.card-proyecto-rol {
+  color: var(--Texto-Secundario);
+  text-align: center;
+  font-size: clamp(16px, 2.5vw, 28.133px);
+  font-weight: 600;
+  margin: 0;
+}
+
+.card-proyecto-descripcion {
+  color: var(--Texto);
+  text-align: center;
+  font-size: clamp(14px, 1.8vw, 21.099px);
+  font-weight: 400;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.card-proyecto-boton {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  text-decoration: underline;
+  transition: all 0.3s ease;
+  margin-bottom: 1vh;
+}
+
+.card-proyecto-boton:hover {
+  transform: scale(1.05);
+}
+
+.boton-texto {
+  color: var(--Elementos-Graficos);
+  font-size: clamp(16px, 2vw, 24px);
+  font-weight: 700;
+}
+
+.boton-flechas {
+  color: var(--Elementos-Graficos);
+  font-size: clamp(16px, 2vw, 24px);
+  font-weight: 400;
+}
