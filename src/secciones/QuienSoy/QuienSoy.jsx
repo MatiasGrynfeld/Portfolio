@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import './QuienSoy.css'
-import Titulo from '../components/Titulo'
+import Titulo from '../../components/Titulo'
 
 function QuienSoy() {
   const [data, setData] = useState({ para1: '', para2: '', highlight: [] })

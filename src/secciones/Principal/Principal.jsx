@@ -1,10 +1,10 @@
 import './Principal.css'
-import PanelLateral from '../components/PanelLateral'
-import QuienSoy from './QuienSoy'
-import Habilidades from './Habilidades'
-import Seccion3 from './Seccion3'
-import Proyectos from './Proyectos'
-import Otros from './Otros'
+import PanelLateral from '../../components/PanelLateral'
+import QuienSoy from '../QuienSoy/QuienSoy'
+import Habilidades from '../Habilidades/Habilidades'
+import Timeline from '../Timeline/Timeline'
+import Proyectos from '../Proyectos/Proyectos'
+import Otros from '../Otros/Otros'
 
 function Principal() {
   return (
@@ -15,7 +15,7 @@ function Principal() {
       <div className="contenido-container">
         <QuienSoy />
         <Habilidades />
-        <Seccion3 />
+        <Timeline />
         <Proyectos />
         <Otros />
       </div>

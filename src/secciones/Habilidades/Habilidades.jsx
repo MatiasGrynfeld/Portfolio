@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import './Habilidades.css'
-import Titulo from '../components/Titulo'
-import CardHabilidad from '../components/CardHabilidad'
+import Titulo from '../../components/Titulo'
+import CardHabilidad from '../../components/CardHabilidad'
 
 function Habilidades() {
   const [data, setData] = useState({ cards: [] })

@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import './Contacto.css'
-import Titulo from '../components/Titulo'
-import ContactCard from '../components/ContactCard'
+import Titulo from '../../components/Titulo'
+import ContactCard from '../../components/ContactCard'
 
 function Contacto() {
   const [data, setData] = useState({ text: '', icons_path: [] })

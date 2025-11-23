@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import './Proyectos.css'
-import Titulo from '../components/Titulo'
-import CardProyecto from '../components/CardProyecto'
+import Titulo from '../../components/Titulo'
+import CardProyecto from '../../components/CardProyecto'
 
 function Proyectos() {
   const [data, setData] = useState({ proyectos: [] })

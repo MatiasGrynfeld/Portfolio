@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import './Otros.css'
-import Titulo from '../components/Titulo'
+import Titulo from '../../components/Titulo'
 
 function Otros() {
   const [data, setData] = useState({ Logros: { items: [], highlight: [] }, Extracurricular: { items: [], highlight: [] } })
