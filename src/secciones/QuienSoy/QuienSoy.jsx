@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import './QuienSoy.css'
+import '../Seccion.css'
 import Titulo from '../../components/Titulo'
 
 function QuienSoy() {

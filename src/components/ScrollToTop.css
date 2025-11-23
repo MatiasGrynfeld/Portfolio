@@ -1,0 +1,35 @@
+.scroll-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--Elementos-Graficos);
+  border: 3px solid var(--Detalles);
+  color: #FFF;
+  font-size: 32px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.scroll-to-top:hover {
+  transform: scale(1.1);
+  background: var(--Detalles);
+  color: var(--Elementos-Graficos);
+}
+
+.arrow-up {
+  width: 30px;
+  height: 30px;
+  filter: brightness(0) invert(1);
+}
+
+.scroll-to-top:hover .arrow-up {
+  filter: none;
+}

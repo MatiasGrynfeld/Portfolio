@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import './Proyectos.css'
+import '../Seccion.css'
 import Titulo from '../../components/Titulo'
 import CardProyecto from '../../components/CardProyecto'
 

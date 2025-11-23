@@ -15,7 +15,7 @@ function Timeline() {
   }, [])
 
   return (
-    <section className="timeline">
+    <section className="timeline" id="edu-exp">
       <Titulo texto="Educación y Experiencia" />
       <div className="timeline-wrapper">
         <VerticalTimeline>

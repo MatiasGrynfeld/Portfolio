@@ -9,11 +9,12 @@
   padding: 1rem;
   transition: all 0.3s ease;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .contact-card:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(2, 137, 75, 0.2);
+  box-shadow: 0 0 30px rgba(2, 137, 75, 0.6), 0 0 60px rgba(2, 137, 75, 0.4), 0 8px 20px rgba(2, 137, 75, 0.3);
 }
 
 .contact-card img {
