@@ -11,10 +11,10 @@ function Portada() {
       <p className="lema">Observar, Analizar, e Innovar</p>
       <div className="iconos">
         <a href="#" className="icono">
-          <img src="/githubIcon.png"/>
+          <img src="/icons/githubIcon.png"/>
         </a>
         <a href="#" className="icono">
-          <img src="/linkedinIcon.png"/>
+          <img src="/icons/linkedinIcon.png"/>
         </a>
         <CVIcon size={80} />
       </div>

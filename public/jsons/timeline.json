@@ -1,0 +1,84 @@
+{
+    "elements": [
+        {
+            "id": 0,
+            "title": "Secundario ORT",
+            "date": "2020-2025",
+            "description": "Fui a la secundaria ORT Belgrano. En 2023 empecé a cursar la especialización TIC (Tecnología de la Información y la Comunicación).",
+            "icon_path": "",
+            "button": ""
+        },
+        {
+            "id": 1,
+            "title": "NeoDrift",
+            "date": "Jul. - Nov. 2023",
+            "description": "Mi primer proyecto en TIC que me permitió consolidar mis bases en la programación.",
+            "icon_path": "",
+            "button": "CONOCER MÁS"
+        },
+        {
+            "id": 2,
+            "title": "FCE Exam",
+            "date": "Dic. 2023",
+            "description": "Rendí el examen “First Certificate in English” (FCE) obteniendo una certificación de B2.",
+            "icon_path": "",
+            "button": ""
+        },
+        {
+            "id": 3,
+            "title": "SignAI",
+            "date": "Jul. - Nov. 2024",
+            "description": "Segundo proyecto en TIC, donde pude trabajar en una solución de mayor escala. Fue mi primer proyecto realmente grande y el primero en el que desarrollé una inteligencia artificial propia.",
+            "icon_path": "",
+            "button": "CONOCER MÁS"
+        },
+        {
+            "id": 4,
+            "title": "OIA - Certamen Nacional",
+            "date": "Nov. 2024",
+            "description": "Obtuve el 5.º puesto en el Certamen Nacional 2024 de la Olimpiada Informática Argentina.",
+            "icon_path": "",
+            "button": ""
+        },
+        {
+            "id": 5,
+            "title": "AI in Latam 24",
+            "date": "Nov. 2024",
+            "description": "Tuve la oportunidad de presentar junto a mi equipo nuestro proyecto SignAI en el evento de inteligencia artificial AILAT. Fue una experiencia muy valiosa porque me permitió conectar con profesionales de la industria con mucha experiencia.",
+            "icon_path": "",
+            "button": ""
+        },
+        {
+            "id": 6,
+            "title": "CAE Exam",
+            "date": "Dic. 2024",
+            "description": "Rendí el examen “Certificate in Advanced English” (CAE) obteniendo una certificación de C1.",
+            "icon_path": "",
+            "button": ""
+        },
+        {
+            "id": 7,
+            "title": "PipeEye",
+            "date": "Ene. - Dic. 2025",
+            "description": "Tercer proyecto de TIC y también el proyecto final de la especialidad. Representó una experiencia mucho más cercana a un entorno profesional.",
+            "icon_path": "",
+            "button": "CONOCER MÁS"
+        },
+        {
+            "id": 8,
+            "title": "Komet",
+            "date": "Oct. 2025",
+            "description": "Participé en el NASA Space Apps Challenge, una hackatón de 36 horas para desarrollar una solución a un problema y presentarla ante un jurado. Mi equipo obtuvo la mención al “Best Use of Technology”.",
+            "icon_path": "",
+            "button": "CONOCER MÁS"
+        },
+        {
+            "id": 9,
+            "title": "Tecnología Digital",
+            "date": "2026 - Actualidad",
+            "description": "Estoy cursando la carrera de Tecnología Digital en la Universidad Torcuato Di Tella, con el objetivo de ampliar mi s conocimientos en tecnología y enfocarlos a lo que me gusta. Cuento con una beca del 35%, por haber estado entre los tres mejores promedios de mi especialidad.",
+            "icon_path": "",
+            "button": ""
+        }
+    ]
+}

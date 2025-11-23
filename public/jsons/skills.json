@@ -1,7 +1,7 @@
 {
     "cards": [
         {
-            "icon_path": "/dataScienceIcon.png",
+            "icon_path": "/icons/dataScienceIcon.png",
             "title": "Data Science",
             "skills": [
                 "Python.",
@@ -10,7 +10,7 @@
             ]
         },
         {
-            "icon_path": "/aiEngineerIcon.png",
+            "icon_path": "/icons/aiEngineerIcon.png",
             "title": "Data Science",
             "skills": [
                 "Pytorch, Weights And Biases, OpenCV.",
@@ -18,7 +18,7 @@
             ]
         },
         {
-            "icon_path": "/languageIcon.png",
+            "icon_path": "/icons/languageIcon.png",
             "title": "Data Science",
             "skills": [
                 "Español.",
@@ -26,7 +26,7 @@
             ]
         },
         {
-            "icon_path": "/otherIcon.png",
+            "icon_path": "/icons/otherIcon.png",
             "title": "Data Science",
             "skills": [
                 "Trabajo en equipo, buena comunicación.",

@@ -28,7 +28,7 @@ function PanelLateral() {
       <div className="separador"></div>
       <section className="seccion-info">
         <div className="icono-info">
-          <img src="/mailIcon.png"/>
+          <img src="/icons/mailIcon.png"/>
         </div>
         <div className="texto-info">
           <h3 className="titulo-info">MAIL</h3>
@@ -39,7 +39,7 @@ function PanelLateral() {
       <div className="separador"></div>
       <section className="seccion-info">
         <div className="icono-info">
-          <img src="/locationIcon.png"/>
+          <img src="/icons/locationIcon.png"/>
         </div>
         <div className="texto-info">
           <h3 className="titulo-info">UBICACIÓN</h3>
@@ -51,10 +51,10 @@ function PanelLateral() {
 
       <section className="seccion-iconos">
         <a href="#" className="icono-social">
-          <img src="/githubIcon.png"/>
+          <img src="/icons/githubIcon.png"/>
         </a>
         <a href="#" className="icono-social">
-          <img src="/linkedinIcon.png"/>
+          <img src="/icons/linkedinIcon.png"/>
         </a>
         <CVIcon size={90} />
       </section>

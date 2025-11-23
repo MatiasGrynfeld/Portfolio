@@ -1,10 +1,10 @@
 {
     "text": "Gracias por tomarte el tiempo de visitar mi portfolio. Si querés ponerte en contacto conmigo, podés hacerlo a través de cualquiera de las plataformas que figuran abajo. Estoy siempre abierto a conversar, compartir ideas o colaborar en nuevos proyectos.",
     "icons_path": [
-        "/contactMailIcon.png",
-        "/wppContactIcon.png",
-        "/linkedinContactIcon.png",
-        "/cvContactIcon.png",
-        "/githubContactIcon.png"
+        "/contact/contactMailIcon.png",
+        "/contact/wppContactIcon.png",
+        "/contact/linkedinContactIcon.png",
+        "/contact/cvContactIcon.png",
+        "/contact/githubContactIcon.png"
     ]
 }
