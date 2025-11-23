@@ -1,3 +1,101 @@
+.timeline{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5%;
+  gap: 2rem;
+}
+
 .timeline-wrapper {
-  width: 90%;
+  width: 100%;
+}
+
+.vertical-timeline-element-content{
+  translate: 0 -40px !important;
+}
+
+.vertical-timeline-element-content {
+  border-radius: 50px !important;
+  border: 4px solid var(--Elementos-Graficos) !important;
+  background: #FFF !important;
+  padding: 1vh 2vw 3vh 2vw !important;
+}
+
+.vertical-timeline-element-content-arrow {
+  border-right-color: var(--Elementos-Graficos) !important;
+  border-width: 15px !important;
+  top: 50px !important;
+}
+
+.vertical-timeline-element--left .vertical-timeline-element-content-arrow {
+  border-left-color: var(--Elementos-Graficos) !important;
+  border-width: 15px !important;
+  top: 50px !important;
+}
+
+.vertical-timeline-element-title {
+  color: var(--Texto) !important;
+  font-family: Manrope !important;
+  font-size: 45px !important;
+  font-weight: 700 !important;
+}
+
+.vertical-timeline-element-subtitle {
+  color: var(--Texto-Secundario) !important;
+  font-family: Manrope !important;
+  font-size: 32px !important;
+  font-weight: 600 !important;
+}
+
+.vertical-timeline-element-content p {
+  color: var(--Texto) !important;
+  font-family: Manrope !important;
+  font-size: 21.1px !important;
+  font-weight: 400 !important;
+}
+
+.vertical-timeline::before {
+  background: var(--Elementos-Graficos) !important;
+  width: 11px !important;
+  border-radius: 29px;
+  left: 50% !important;
+  margin-left: -5.5px !important;
+}
+
+.vertical-timeline-element-icon {
+  background: var(--Detalles) !important;
+  border: 4px solid var(--Elementos-Graficos) !important;
+  box-shadow: none !important;
+}
+
+.vertical-timeline-element-icon svg {
+  color: #FFF !important;
+}
+
+.timeline-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  text-decoration: underline;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+  text-decoration-color: var(--Elementos-Graficos);
+}
+
+.timeline-button:hover {
+  transform: scale(1.05);
+}
+
+.timeline-button .boton-texto {
+  color: var(--Elementos-Graficos);
+  font-size: clamp(16px, 2vw, 24px);
+  font-weight: 700;
+}
+
+.timeline-button .boton-flechas {
+  color: var(--Elementos-Graficos);
+  font-size: clamp(16px, 2vw, 24px);
+  font-weight: 400;
 }
