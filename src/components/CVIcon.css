@@ -11,4 +11,13 @@
   border: 4.238px solid var(--Elementos-Graficos);
   background-color: #FFF;
   aspect-ratio: 1/1;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.cv-icon:hover {
+  transform: scale(1.15);
+  box-shadow: 0 0 20px rgba(2, 137, 75, 0.4);
+  background-color: var(--Elementos-Graficos);
+  color: #FFF;
 }

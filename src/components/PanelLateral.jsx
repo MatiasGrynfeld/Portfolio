@@ -1,7 +1,13 @@
 import './PanelLateral.css'
 import CVIcon from './CVIcon'
+import { scrollToElement } from '../utils/smoothScroll'
 
 function PanelLateral() {
+  const handleNavClick = (e, sectionId) => {
+    e.preventDefault()
+    scrollToElement(sectionId, 1000)
+  }
+
   return (
     <aside className="panel-lateral">
       <section className="seccion-perfil">
@@ -14,14 +20,14 @@ function PanelLateral() {
       <div className="separador"></div>
       <nav className="seccion-navegacion">
         <div className="columna-nav">
-          <a href="#quien-soy">¿Quién Soy?</a>
-          <a href="#habilidades">Habilidades</a>
-          <a href="#edu-exp">Edu. & Exp.</a>
+          <a href="#quien-soy" onClick={(e) => handleNavClick(e, 'quien-soy')}>¿Quién Soy?</a>
+          <a href="#habilidades" onClick={(e) => handleNavClick(e, 'habilidades')}>Habilidades</a>
+          <a href="#edu-exp" onClick={(e) => handleNavClick(e, 'edu-exp')}>Edu. & Exp.</a>
         </div>
         <div className="columna-nav">
-          <a href="#proyectos">Proyectos</a>
-          <a href="#otros">Otros</a>
-          <a href="#contacto">Contactame</a>
+          <a href="#proyectos" onClick={(e) => handleNavClick(e, 'proyectos')}>Proyectos</a>
+          <a href="#otros" onClick={(e) => handleNavClick(e, 'otros')}>Otros</a>
+          <a href="#contacto" onClick={(e) => handleNavClick(e, 'contacto')}>Contactame</a>
         </div>
       </nav>
 
