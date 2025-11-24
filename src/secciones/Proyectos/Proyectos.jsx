@@ -25,6 +25,7 @@ function Proyectos() {
             Nombre={proyecto.Nombre}
             Rol={proyecto.Rol}
             Descripcion={proyecto.Descripcion}
+            id={proyecto.id}
           />
         ))}
       </div>

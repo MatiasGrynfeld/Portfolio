@@ -3,6 +3,7 @@ import Titulo from '../../components/Titulo'
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component'
 import 'react-vertical-timeline-component/style.min.css'
 import { useState, useEffect } from 'react'
+import { scrollToElement } from '../../utils/smoothScroll'
 
 function Timeline() {
   const [timelineData, setData] = useState({ elements: [] })
@@ -27,9 +28,22 @@ function Timeline() {
               <h3 className="vertical-timeline-element-title">{element.title}</h3>
               <h5 className='vertical-timeline-element-subtitle'>{element.date}</h5>
               <p>{element.description}</p>
-              {element.button && (
-                <button className="timeline-button">
-                  <span className="boton-texto">{element.button}</span>
+              {element.goto && (
+                <button 
+                  className="timeline-button"
+                  onClick={() => {
+                    scrollToElement('proyectos', 1000, () => {
+                      const card = document.getElementById(element.goto)
+                      if (card) {
+                        card.classList.add('highlight-pulse')
+                        setTimeout(() => {
+                          card.classList.remove('highlight-pulse')
+                        }, 1000)
+                      }
+                    })
+                  }}
+                >
+                  <span className="boton-texto">CONOCER MÁS</span>
                   <span className="boton-flechas">{">>"}</span>
                 </button>
               )}

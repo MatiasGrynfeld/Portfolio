@@ -1,28 +1,32 @@
 {
     "proyectos": [
         {
-            "img_path": "/projects/NeoDrift.png",
-            "Nombre": "NeoDrift",
-            "Rol": "Software Developer (2023)",
-            "Descripcion": "Auto a control remoto con luces LED configurables con una aplicación de escritorio."
+            "img_path": "/projects/PipeEye.png",
+            "Nombre": "PipeEye",
+            "Rol": "AI Engineer (2025)",
+            "Descripcion": "Herramienta para analizar radiografías de soldaduras de ductos y segmentar defectos.",
+            "id": "pipeeye"
         },
         {
             "img_path": "/projects/SignAI.png",
             "Nombre": "SignAI",
             "Rol": "AI Engineer (2024)",
-            "Descripcion": "Traductor de lengua de señas con inteligencia artificial."
+            "Descripcion": "Traductor de lengua de señas con inteligencia artificial.",
+            "id": "signai"
         },
         {
             "img_path": "/projects/Komet.png",
             "Nombre": "Komet",
             "Rol": "Back-end y ML Engineer (2025)",
-            "Descripcion": "Plataforma web que simula las órbitas de meteoros, posibles impactos y sus efectos."
+            "Descripcion": "Plataforma web que simula las órbitas de meteoros, posibles impactos y sus efectos.",
+            "id": "komet"
         },
         {
-            "img_path": "/projects/PipeEye.png",
-            "Nombre": "PipeEye",
-            "Rol": "AI Engineer (2025)",
-            "Descripcion": "Herramienta para analizar radiografías de soldaduras de ductos y segmentar defectos."
+            "img_path": "/projects/NeoDrift.png",
+            "Nombre": "NeoDrift",
+            "Rol": "Software Developer (2023)",
+            "Descripcion": "Auto a control remoto con luces LED configurables con una aplicación de escritorio.",
+            "id": "neodrift"
         }
     ]
 }

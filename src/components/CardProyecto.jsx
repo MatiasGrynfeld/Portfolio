@@ -1,8 +1,8 @@
 import './CardProyecto.css'
 
-function CardProyecto({ img_path, Nombre, Rol, Descripcion }) {
+function CardProyecto({ img_path, Nombre, Rol, Descripcion, id }) {
   return (
-    <article className="card-proyecto">
+    <article className="card-proyecto" id={id}>
       <div className="card-proyecto-imagen">
         <img src={img_path} />
       </div>
