@@ -28,7 +28,7 @@ function ContactCard({ icon_path, href, index = 0 }) {
         delay: 0.2 + index * 0.08,
         ease: [0.25, 0.46, 0.45, 0.94]
       }}
-      whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
+      whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
       whileTap={{ scale: 0.95 }}
       {...linkProps}
     >
