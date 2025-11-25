@@ -1,10 +1,25 @@
 {
     "text": "Gracias por tomarte el tiempo de visitar mi portfolio. Si querés ponerte en contacto conmigo, podés hacerlo a través de cualquiera de las plataformas que figuran abajo. Estoy siempre abierto a conversar, compartir ideas o colaborar en nuevos proyectos.",
-    "icons_path": [
-        "/contact/contactMailIcon.png",
-        "/contact/wppContactIcon.png",
-        "/contact/linkedinContactIcon.png",
-        "/contact/cvContactIcon.png",
-        "/contact/githubContactIcon.png"
+    "contacts": [
+        {
+            "icon_path": "/contact/contactMailIcon.png",
+            "href": "mailto:matiasgrynfeld@gmail.com"
+        },
+        {
+            "icon_path": "/contact/wppContactIcon.png",
+            "href": "https://wa.me/5491157223895"
+        },
+        {
+            "icon_path": "/contact/linkedinContactIcon.png",
+            "href": "https://www.linkedin.com/in/matias-grynfeld/"
+        },
+        {
+            "icon_path": "/contact/cvContactIcon.png",
+            "href": "#"
+        },
+        {
+            "icon_path": "/contact/githubContactIcon.png",
+            "href": "https://github.com/MatiasGrynfeld"
+        }
     ]
 }

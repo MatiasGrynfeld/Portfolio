@@ -33,12 +33,12 @@ function PanelLateral() {
 
       <div className="separador"></div>
       <section className="seccion-info">
-        <div className="icono-info">
+        <a href="mailto:matiasgrynfeld@gmail.com" className="icono-info" style={{ cursor: 'pointer' }}>
           <img src="/icons/mailIcon.png"/>
-        </div>
+        </a>
         <div className="texto-info">
           <h3 className="titulo-info">MAIL</h3>
-          <p className="contenido-info">matiasgrynfeld@gmail.com</p>
+          <a href="mailto:matiasgrynfeld@gmail.com" className="contenido-info contenido-info-link">matiasgrynfeld@gmail.com</a>
         </div>
       </section>
 
@@ -49,17 +49,17 @@ function PanelLateral() {
         </div>
         <div className="texto-info">
           <h3 className="titulo-info">UBICACIÓN</h3>
-          <p className="contenido-info">Buenos Aires, Argentina</p>
+          <p className="contenido-info contenido-info-static">Buenos Aires, Argentina</p>
         </div>
       </section>
 
       <div className="separador"></div>
 
       <section className="seccion-iconos">
-        <a href="#" className="icono-social">
+        <a href="https://github.com/MatiasGrynfeld" target="_blank" rel="noopener noreferrer" className="icono-social">
           <img src="/icons/githubIcon.png"/>
         </a>
-        <a href="#" className="icono-social">
+        <a href="https://www.linkedin.com/in/matias-grynfeld/" target="_blank" rel="noopener noreferrer" className="icono-social">
           <img src="/icons/linkedinIcon.png"/>
         </a>
         <CVIcon size={90} />

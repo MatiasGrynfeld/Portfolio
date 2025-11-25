@@ -4,7 +4,7 @@ import Titulo from '../../components/Titulo'
 import ContactCard from '../../components/ContactCard'
 
 function Contacto() {
-  const [data, setData] = useState({ text: '', icons_path: [] })
+  const [data, setData] = useState({ text: '', contacts: [] })
 
   useEffect(() => {
     fetch('/jsons/contacto.json')
@@ -20,13 +20,13 @@ function Contacto() {
         <p className="contacto-texto">{data.text}</p>
         <div className="contacto-grid">
           <div className="contacto-fila-3">
-            {data.icons_path.slice(0, 3).map((icon_path, index) => (
-              <ContactCard key={index} icon_path={icon_path}/>
+            {data.contacts.slice(0, 3).map((contact, index) => (
+              <ContactCard key={index} icon_path={contact.icon_path} href={contact.href}/>
             ))}
           </div>
           <div className="contacto-fila-2">
-            {data.icons_path.slice(3).map((icon_path, index) => (
-              <ContactCard key={index} icon_path={icon_path}/>
+            {data.contacts.slice(3).map((contact, index) => (
+              <ContactCard key={index} icon_path={contact.icon_path} href={contact.href}/>
             ))}
           </div>
         </div>

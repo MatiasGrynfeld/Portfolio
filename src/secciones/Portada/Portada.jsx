@@ -34,15 +34,15 @@ function Portada() {
   return (
     <header className="portada">
       <div className="logo">
-        <img src="/logo.png"/>
+        <img src="/Logo.png"/>
       </div>
       <h1 className="nombre">Matías Grynfeld</h1>
       <p className="lema">Observar, Analizar, e Innovar</p>
       <div className="iconos">
-        <a href="#" className="icono">
+        <a href="https://github.com/MatiasGrynfeld" target="_blank" rel="noopener noreferrer" className="icono">
           <img src="/icons/githubIcon.png"/>
         </a>
-        <a href="#" className="icono">
+        <a href="https://www.linkedin.com/in/matias-grynfeld/" target="_blank" rel="noopener noreferrer" className="icono">
           <img src="/icons/linkedinIcon.png"/>
         </a>
         <CVIcon size={80} />

@@ -158,12 +158,16 @@
   font-size: 26px;
   font-weight: 400;
   text-align: center;
+}
+
+.contenido-info-link {
+  text-decoration: none;
   transition: all 0.3s ease;
   cursor: pointer;
   position: relative;
 }
 
-.contenido-info::after {
+.contenido-info-link::after {
   content: '';
   position: absolute;
   width: 0;
@@ -175,13 +179,17 @@
   transform: translateX(-50%);
 }
 
-.contenido-info:hover {
+.contenido-info-link:hover {
   color: var(--Elementos-Graficos);
   transform: scale(1.05);
 }
 
-.contenido-info:hover::after {
+.contenido-info-link:hover::after {
   width: 100%;
+}
+
+.contenido-info-static {
+  cursor: default;
 }
 
 .seccion-iconos {
