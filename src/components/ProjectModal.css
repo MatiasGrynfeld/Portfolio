@@ -112,7 +112,6 @@
 
 .modal-close:hover {
   background: rgba(2, 137, 75, 0.1);
-  transform: rotate(90deg);
 }
 
 .modal-close svg {

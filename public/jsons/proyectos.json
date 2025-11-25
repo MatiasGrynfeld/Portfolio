@@ -6,9 +6,9 @@
             "Rol": "AI Engineer (2025)",
             "Descripcion": "Herramienta para analizar radiografías de soldaduras de ductos y segmentar defectos.",
             "id": "pipeeye",
-            "resumen": "PipeEye es una herramienta avanzada de inteligencia artificial diseñada para analizar radiografías de soldaduras de ductos. Utilizando técnicas de visión por computadora y aprendizaje profundo, el sistema es capaz de detectar y segmentar automáticamente diversos tipos de defectos en soldaduras, mejorando la eficiencia y precisión en el control de calidad industrial.",
-            "tecnologias": ["Python", "TensorFlow", "OpenCV", "React", "Node.js", "PostgreSQL"],
-            "link": ""
+            "resumen": "PipeEye es una herramienta que utiliza modelos de inteligencia artificial para analizar radiografías industriales de ductos de petróleo y gas, detectando fallas en cuestión de segundos y reduciendo drásticamente el tiempo, el cansancio y la subjetividad que enfrentan los inspectores humanos. Nace como respuesta a un proceso tradicional que exige revisar cientos de imágenes por día, donde la interpretación varía entre especialistas y requiere años de entrenamiento, y aprovecha la transición de la industria hacia formatos digitales para ofrecer un sistema capaz de identificar y clasificar más de quince tipos de defectos, marcando zonas críticas y funcionando como un apoyo técnico que mejora la precisión y eficiencia sin reemplazar la experiencia profesional.",
+            "tecnologias": ["Python", "React", "TypeScript", "FastAPI", "PyTorch", "Ultralytics", "PostgreSQL", "Tailwind CSS", "Vite", "Three.js"],
+            "link": "https://pipeeye.vercel.app/"
         },
         {
             "img_path": "/projects/SignAI.png",
@@ -16,9 +16,9 @@
             "Rol": "AI Engineer (2024)",
             "Descripcion": "Traductor de lengua de señas con inteligencia artificial.",
             "id": "signai",
-            "resumen": "SignAI es un traductor innovador que utiliza inteligencia artificial para interpretar la lengua de señas en tiempo real. El sistema emplea redes neuronales convolucionales y recurrentes para reconocer gestos y traducirlos a texto o voz, facilitando la comunicación entre personas sordas y oyentes.",
-            "tecnologias": ["Python", "TensorFlow", "MediaPipe", "Flask", "React", "WebRTC"],
-            "link": "https://github.com/MatiasGrynfeld"
+            "resumen": "SignAI es una aplicación móvil creada para facilitar la comunicación de las personas sordas que utilizan Lengua de Señas Argentina, ofreciendo traducción en tiempo real y también de forma asincrónica para permitir interacciones cotidianas más fluidas y autónomas. Surge de la necesidad de derribar las barreras que enfrentan unas doscientas mil personas en Argentina cuya principal forma de expresión es una lengua visual y completa en su gramática, muchas veces incomprendida por quienes no la usan y difícil de reemplazar incluso mediante la escritura. La propuesta busca no solo resolver esta brecha comunicacional con tecnología accesible, sino también generar conciencia social, promover el aprendizaje de la lengua de señas y brindar herramientas que hagan más simple y natural la inclusión en cualquier entorno.",
+            "tecnologias": ["Python", "Pytorch", "MediaPipe", "JWT", "React Native", "Node.js", "Express", "ONNX Runtime"],
+            "link": "https://signai.ar/"
         },
         {
             "img_path": "/projects/Komet.png",
@@ -26,9 +26,9 @@
             "Rol": "Back-end y ML Engineer (2025)",
             "Descripcion": "Plataforma web que simula las órbitas de meteoros, posibles impactos y sus efectos.",
             "id": "komet",
-            "resumen": "Komet es una plataforma web educativa que simula la dinámica de meteoros en el espacio. Utilizando modelos físicos y algoritmos de machine learning, la aplicación predice trayectorias orbitales, calcula probabilidades de impacto y visualiza los efectos potenciales de colisiones con la Tierra u otros cuerpos celestes.",
-            "tecnologias": ["Python", "FastAPI", "Three.js", "React", "NumPy", "SciPy"],
-            "link": ""
+            "resumen": "Komet es una plataforma web educativa e interactiva desarrollada para el desafío Meteor Madness de la NASA Space Apps Challenge, una hackatón de 36 horas en la que los equipos deben resolver un problema propuesto por la NASA y presentarlo ante un jurado. El proyecto combina datos reales de las APIs de NEO de NASA y del Servicio Geológico de Estados Unidos con simulaciones 3D y modelos matemáticos para mostrar la órbita, la trayectoria de impacto y las posibles consecuencias sísmicas de meteoritos específicos elegidos por el usuario. Su propuesta permite explorar estos cuerpos de forma accesible y precisa, integrando cálculos orbitales, análisis probabilísticos y predicciones basadas en machine learning para comprender riesgos y efectos potenciales sobre la Tierra, lo que le valió al equipo la mención “Best Use of Technology”.",
+            "tecnologias": ["Python", "FastAPI", "Three.js", "React", "NumPy", "Scikit-Learn", "Node.js"],
+            "link": "https://kometapp.vercel.app/"
         },
         {
             "img_path": "/projects/NeoDrift.png",
@@ -36,8 +36,8 @@
             "Rol": "Software Developer (2023)",
             "Descripcion": "Auto a control remoto con luces LED configurables con una aplicación de escritorio.",
             "id": "neodrift",
-            "resumen": "NeoDrift es un proyecto de robótica que combina hardware y software para crear un auto a control remoto con un sistema de iluminación LED personalizable. A través de una aplicación de escritorio intuitiva, los usuarios pueden controlar el vehículo y configurar patrones de luces LED en tiempo real mediante comunicación Bluetooth.",
-            "tecnologias": ["Python", "Arduino", "Bluetooth", "PyQt5", "C++"],
+            "resumen": "NeoDrift es un auto a control remoto diseñado e impreso en 3D que integra un sistema de radiofrecuencia conectado a un Arduino para controlar la velocidad y el giro de los motores. Está dirigido a adolescentes y adultos interesados en autos RC o impresión 3D. Incluye una aplicación de Windows que permite configurar el vehículo, cambiar el color de los leds Neopixels, aplicar efectos de iluminación y cargar recorridos preconfigurados para que el auto los ejecute de manera autónoma. Es una propuesta centrada en la construcción, personalización y control preciso de un vehículo RC.",
+            "tecnologias": ["C#", "Arduino", "Radiofrecuencia", "Neopixel", "C++"],
             "link": ""
         }
     ]

@@ -64,7 +64,7 @@ function ProjectModal({ project, onClose }) {
           <motion.button 
             className="modal-close" 
             onClick={handleClose}
-            whileHover={{ scale: 1.1, rotate: 90 }}
+            whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
             <svg viewBox="0 0 24 24" fill="none">
