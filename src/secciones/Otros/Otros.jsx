@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { motion } from 'framer-motion'
 import './Otros.css'
 import '../Seccion.css'
 import Titulo from '../../components/Titulo'
@@ -43,23 +44,51 @@ function Otros() {
     <section className="seccion otros" id="otros">
       <Titulo texto="Otras cosas sobre mí" />
       
-      <div className="otros-seccion">
+      <motion.div 
+        className="otros-seccion"
+        initial={{ opacity: 0, x: -50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.6, delay: 0.2 }}
+      >
         <h3 className="otros-subtitulo">Logros</h3>
         <ul className="otros-lista">
           {data.Logros.items.map((item, index) => (
-            <li key={index}>{highlightText(item, data.Logros.highlight)}</li>
+            <motion.li 
+              key={index}
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.4, delay: 0.3 + index * 0.1 }}
+            >
+              {highlightText(item, data.Logros.highlight)}
+            </motion.li>
           ))}
         </ul>
-      </div>
+      </motion.div>
 
-      <div className="otros-seccion">
+      <motion.div 
+        className="otros-seccion"
+        initial={{ opacity: 0, x: -50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.6, delay: 0.4 }}
+      >
         <h3 className="otros-subtitulo">Extracurricular</h3>
         <ul className="otros-lista">
           {data.Extracurricular.items.map((item, index) => (
-            <li key={index}>{highlightText(item, data.Extracurricular.highlight)}</li>
+            <motion.li 
+              key={index}
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.4, delay: 0.5 + index * 0.1 }}
+            >
+              {highlightText(item, data.Extracurricular.highlight)}
+            </motion.li>
           ))}
         </ul>
-      </div>
+      </motion.div>
     </section>
   )
 }

@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import './PanelLateral.css'
 import CVIcon from './CVIcon'
 import { scrollToElement } from '../utils/smoothScroll'
@@ -9,16 +10,31 @@ function PanelLateral() {
   }
 
   return (
-    <aside className="panel-lateral">
-      <section className="seccion-perfil">
+    <motion.aside 
+      className="panel-lateral"
+      initial={{ opacity: 0, x: -100 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+    >
+      <motion.section 
+        className="seccion-perfil"
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.6, delay: 0.3 }}
+      >
         <div className="foto-perfil">
           <img src="/aksjhdb" alt="FOTO" />
         </div>
         <h2 className="nombre-perfil">Matías Grynfeld</h2>
-      </section>
+      </motion.section>
 
       <div className="separador"></div>
-      <nav className="seccion-navegacion">
+      <motion.nav 
+        className="seccion-navegacion"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.5 }}
+      >
         <div className="columna-nav">
           <a href="#quien-soy" onClick={(e) => handleNavClick(e, 'quien-soy')}>¿Quién Soy?</a>
           <a href="#habilidades" onClick={(e) => handleNavClick(e, 'habilidades')}>Habilidades</a>
@@ -29,10 +45,15 @@ function PanelLateral() {
           <a href="#otros" onClick={(e) => handleNavClick(e, 'otros')}>Otros</a>
           <a href="#contacto" onClick={(e) => handleNavClick(e, 'contacto')}>Contactame</a>
         </div>
-      </nav>
+      </motion.nav>
 
       <div className="separador"></div>
-      <section className="seccion-info">
+      <motion.section 
+        className="seccion-info"
+        initial={{ opacity: 0, x: -20 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.6, delay: 0.7 }}
+      >
         <a href="mailto:matiasgrynfeld@gmail.com" className="icono-info" style={{ cursor: 'pointer' }}>
           <img src="/icons/mailIcon.png"/>
         </a>
@@ -40,10 +61,15 @@ function PanelLateral() {
           <h3 className="titulo-info">MAIL</h3>
           <a href="mailto:matiasgrynfeld@gmail.com" className="contenido-info contenido-info-link">matiasgrynfeld@gmail.com</a>
         </div>
-      </section>
+      </motion.section>
 
       <div className="separador"></div>
-      <section className="seccion-info">
+      <motion.section 
+        className="seccion-info"
+        initial={{ opacity: 0, x: -20 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.6, delay: 0.8 }}
+      >
         <div className="icono-info">
           <img src="/icons/locationIcon.png"/>
         </div>
@@ -51,20 +77,39 @@ function PanelLateral() {
           <h3 className="titulo-info">UBICACIÓN</h3>
           <p className="contenido-info contenido-info-static">Buenos Aires, Argentina</p>
         </div>
-      </section>
+      </motion.section>
 
       <div className="separador"></div>
 
-      <section className="seccion-iconos">
-        <a href="https://github.com/MatiasGrynfeld" target="_blank" rel="noopener noreferrer" className="icono-social">
+      <motion.section 
+        className="seccion-iconos"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.9 }}
+      >
+        <motion.a 
+          href="https://github.com/MatiasGrynfeld" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="icono-social"
+          whileHover={{ scale: 1.2 }}
+          whileTap={{ scale: 0.9 }}
+        >
           <img src="/icons/githubIcon.png"/>
-        </a>
-        <a href="https://www.linkedin.com/in/matias-grynfeld/" target="_blank" rel="noopener noreferrer" className="icono-social">
+        </motion.a>
+        <motion.a 
+          href="https://www.linkedin.com/in/matias-grynfeld/" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="icono-social"
+          whileHover={{ scale: 1.2 }}
+          whileTap={{ scale: 0.9 }}
+        >
           <img src="/icons/linkedinIcon.png"/>
-        </a>
+        </motion.a>
         <CVIcon size={90} />
-      </section>
-    </aside>
+      </motion.section>
+    </motion.aside>
   )
 }
 

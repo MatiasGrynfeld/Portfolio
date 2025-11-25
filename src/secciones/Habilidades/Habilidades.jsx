@@ -21,6 +21,7 @@ function Habilidades() {
         {data.cards.map((card, index) => (
           <CardHabilidad
             key={index}
+            index={index}
             icon_path={card.icon_path}
             title={card.title}
             skills={card.skills}

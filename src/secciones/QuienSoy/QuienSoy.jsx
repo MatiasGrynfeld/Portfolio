@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { motion } from 'framer-motion'
 import './QuienSoy.css'
 import '../Seccion.css'
 import Titulo from '../../components/Titulo'
@@ -43,8 +44,24 @@ function QuienSoy() {
   return (
     <section className="seccion quien-soy" id="quien-soy">
       <Titulo texto="¿Quién Soy?" />
-      <p className="quien-soy-parrafo">{highlightText(data.para1, data.highlight)}</p>
-      <p className="quien-soy-parrafo">{highlightText(data.para2, data.highlight)}</p>
+      <motion.p 
+        className="quien-soy-parrafo"
+        initial={{ opacity: 0, x: -50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.6, delay: 0.2 }}
+      >
+        {highlightText(data.para1, data.highlight)}
+      </motion.p>
+      <motion.p 
+        className="quien-soy-parrafo"
+        initial={{ opacity: 0, x: -50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.6, delay: 0.4 }}
+      >
+        {highlightText(data.para2, data.highlight)}
+      </motion.p>
     </section>
   )
 }

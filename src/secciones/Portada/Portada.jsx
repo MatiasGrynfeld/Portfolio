@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import './Portada.css'
 import CVIcon from '../../components/CVIcon'
 
@@ -33,21 +34,69 @@ function Portada() {
 
   return (
     <header className="portada">
-      <div className="logo">
+      <motion.div 
+        className="logo"
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
         <img src="/Logo.png"/>
-      </div>
-      <h1 className="nombre">Matías Grynfeld</h1>
-      <p className="lema">Observar, Analizar, e Innovar</p>
-      <div className="iconos">
-        <a href="https://github.com/MatiasGrynfeld" target="_blank" rel="noopener noreferrer" className="icono">
+      </motion.div>
+      <motion.h1 
+        className="nombre"
+        initial={{ opacity: 0, y: -30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.2 }}
+      >
+        Matías Grynfeld
+      </motion.h1>
+      <motion.p 
+        className="lema"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.4 }}
+      >
+        Observar, Analizar, e Innovar
+      </motion.p>
+      <motion.div 
+        className="iconos"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.6 }}
+      >
+        <motion.a 
+          href="https://github.com/MatiasGrynfeld" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="icono"
+          whileHover={{ scale: 1.2 }}
+          whileTap={{ scale: 0.9 }}
+        >
           <img src="/icons/githubIcon.png"/>
-        </a>
-        <a href="https://www.linkedin.com/in/matias-grynfeld/" target="_blank" rel="noopener noreferrer" className="icono">
+        </motion.a>
+        <motion.a 
+          href="https://www.linkedin.com/in/matias-grynfeld/" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="icono"
+          whileHover={{ scale: 1.2 }}
+          whileTap={{ scale: 0.9 }}
+        >
           <img src="/icons/linkedinIcon.png"/>
-        </a>
+        </motion.a>
         <CVIcon size={80} />
-      </div>
-      <button className="boton-empezar" onClick={scrollToQuienSoy}>Empezar</button>
+      </motion.div>
+      <motion.button 
+        className="boton-empezar" 
+        onClick={scrollToQuienSoy}
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.8 }}
+        whileHover={{ scale: 1.1, boxShadow: "0px 0px 20px rgba(2, 137, 75, 0.5)" }}
+        whileTap={{ scale: 0.95 }}
+      >
+        Empezar
+      </motion.button>
     </header>
   )
 }

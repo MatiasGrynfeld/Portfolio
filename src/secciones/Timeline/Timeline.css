@@ -20,7 +20,6 @@
   background: #FFF !important;
   padding: 1vh 2vw 3vh 2vw !important;
   transition: all 0.3s ease !important;
-  cursor: pointer;
 }
 
 .vertical-timeline-element-content:hover {

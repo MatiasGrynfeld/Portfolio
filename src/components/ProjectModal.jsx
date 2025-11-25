@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
 import './ProjectModal.css'
 
 function ProjectModal({ project, onClose }) {
@@ -35,27 +36,64 @@ function ProjectModal({ project, onClose }) {
   }
 
   return (
-    <div 
+    <motion.div 
       className={`modal-overlay ${isClosing ? 'closing' : ''}`}
       onClick={handleOverlayClick}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.3 }}
     >
-      <div className="modal-content">
-        <div className="modal-header">
+      <motion.div 
+        className="modal-content"
+        initial={{ scale: 0.8, y: 50, opacity: 0 }}
+        animate={{ scale: 1, y: 0, opacity: 1 }}
+        exit={{ scale: 0.8, y: 50, opacity: 0 }}
+        transition={{ duration: 0.3, ease: "easeOut" }}
+      >
+        <motion.div 
+          className="modal-header"
+          initial={{ y: -20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.4, delay: 0.1 }}
+        >
           <div className="modal-header-content">
             <h2 className="modal-title">{project.Nombre}</h2>
             <p className="modal-subtitle">{project.Rol}</p>
           </div>
-          <button className="modal-close" onClick={handleClose}>
+          <motion.button 
+            className="modal-close" 
+            onClick={handleClose}
+            whileHover={{ scale: 1.1, rotate: 90 }}
+            whileTap={{ scale: 0.9 }}
+          >
             <svg viewBox="0 0 24 24" fill="none">
               <path d="M18 6L6 18M6 6l12 12" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
-          </button>
-        </div>
+          </motion.button>
+        </motion.div>
 
-        <div className="modal-body">
-          <img src={project.img_path} alt={project.Nombre} className="modal-image" />
+        <motion.div 
+          className="modal-body"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+        >
+          <motion.img 
+            src={project.img_path} 
+            alt={project.Nombre} 
+            className="modal-image"
+            initial={{ scale: 0.9, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+          />
 
-          <div className="modal-section">
+          <motion.div 
+            className="modal-section"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+          >
             <h3 className="modal-section-title">Resumen del Proyecto</h3>
             <p className="modal-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -66,9 +104,14 @@ function ProjectModal({ project, onClose }) {
               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
             </p>
-          </div>
+          </motion.div>
 
-          <div className="modal-section">
+          <motion.div 
+            className="modal-section"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
+          >
             <h3 className="modal-section-title">Desafíos y Soluciones</h3>
             <p className="modal-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
@@ -79,9 +122,14 @@ function ProjectModal({ project, onClose }) {
               <li>Integración compleja de sistemas que requirió soluciones creativas</li>
               <li>Escalabilidad y arquitectura diseñada para crecimiento futuro</li>
             </ul>
-          </div>
+          </motion.div>
 
-          <div className="modal-section">
+          <motion.div 
+            className="modal-section"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.6 }}
+          >
             <h3 className="modal-section-title">Tecnologías Utilizadas</h3>
             <div className="modal-tags">
               <span className="modal-tag">Python</span>
@@ -92,9 +140,14 @@ function ProjectModal({ project, onClose }) {
               <span className="modal-tag">Docker</span>
               <span className="modal-tag">AWS</span>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="modal-section">
+          <motion.div 
+            className="modal-section"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.7 }}
+          >
             <h3 className="modal-section-title">Resultados e Impacto</h3>
             <p className="modal-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Cras non velit nec nisi vulputate nonummy. 
@@ -114,9 +167,14 @@ function ProjectModal({ project, onClose }) {
                 <p className="modal-stat-label">Desarrollo</p>
               </div>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="modal-section">
+          <motion.div 
+            className="modal-section"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.8 }}
+          >
             <h3 className="modal-section-title">Aprendizajes Clave</h3>
             <ul className="modal-list">
               <li>Experiencia práctica en desarrollo de inteligencia artificial aplicada</li>
@@ -125,19 +183,24 @@ function ProjectModal({ project, onClose }) {
               <li>Gestión de proyectos complejos con múltiples stakeholders</li>
               <li>Presentación de soluciones técnicas a audiencias diversas</li>
             </ul>
-          </div>
+          </motion.div>
 
-          <div className="modal-section">
+          <motion.div 
+            className="modal-section"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.9 }}
+          >
             <h3 className="modal-section-title">Enlaces y Recursos</h3>
             <p className="modal-text">
               Repositorio GitHub: <strong>github.com/usuario/proyecto</strong><br/>
               Demostración en vivo: <strong>proyecto-demo.com</strong><br/>
               Documentación técnica: <strong>docs.proyecto.com</strong>
             </p>
-          </div>
-        </div>
-      </div>
-    </div>
+          </motion.div>
+        </motion.div>
+      </motion.div>
+    </motion.div>
   )
 }
 

@@ -21,6 +21,7 @@ function Proyectos() {
         {data.proyectos.map((proyecto, index) => (
           <CardProyecto
             key={index}
+            index={index}
             img_path={proyecto.img_path}
             Nombre={proyecto.Nombre}
             Rol={proyecto.Rol}

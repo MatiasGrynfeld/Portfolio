@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
 import './ScrollToTop.css'
 import { smoothScrollTo } from '../utils/smoothScroll'
 
@@ -26,13 +27,22 @@ function ScrollToTop() {
   }
 
   return (
-    <>
+    <AnimatePresence>
       {isVisible && (
-        <button onClick={scrollToTop} className="scroll-to-top">
+        <motion.button 
+          onClick={scrollToTop} 
+          className="scroll-to-top"
+          initial={{ opacity: 0, scale: 0, y: 20 }}
+          animate={{ opacity: 1, scale: 1, y: 0 }}
+          exit={{ opacity: 0, scale: 0, y: 20 }}
+          transition={{ duration: 0.3 }}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+        >
           <img src="/icons/up-arrow-svgrepo-com.svg" className="arrow-up" />
-        </button>
+        </motion.button>
       )}
-    </>
+    </AnimatePresence>
   )
 }
 

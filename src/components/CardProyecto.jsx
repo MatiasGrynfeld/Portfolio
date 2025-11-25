@@ -1,8 +1,9 @@
 import { useState } from 'react'
+import { motion } from 'framer-motion'
 import './CardProyecto.css'
 import ProjectModal from './ProjectModal'
 
-function CardProyecto({ img_path, Nombre, Rol, Descripcion, id }) {
+function CardProyecto({ img_path, Nombre, Rol, Descripcion, id, index = 0 }) {
   const [isModalOpen, setIsModalOpen] = useState(false)
 
   const handleOpenModal = () => {
@@ -15,7 +16,15 @@ function CardProyecto({ img_path, Nombre, Rol, Descripcion, id }) {
 
   return (
     <>
-      <article className="card-proyecto" id={id}>
+      <motion.article 
+        className="card-proyecto" 
+        id={id}
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.6, delay: index * 0.15 }}
+        whileHover={{ y: -10, transition: { duration: 0.3 } }}
+      >
         <div className="card-proyecto-imagen">
           <img src={img_path} />
         </div>
@@ -28,7 +37,7 @@ function CardProyecto({ img_path, Nombre, Rol, Descripcion, id }) {
             <span className="boton-flechas">{">>"}</span>
           </button>
         </div>
-      </article>
+      </motion.article>
 
       {isModalOpen && (
         <ProjectModal 
