@@ -27,6 +27,9 @@ function Proyectos() {
             Rol={proyecto.Rol}
             Descripcion={proyecto.Descripcion}
             id={proyecto.id}
+            resumen={proyecto.resumen}
+            tecnologias={proyecto.tecnologias}
+            link={proyecto.link}
           />
         ))}
       </div>

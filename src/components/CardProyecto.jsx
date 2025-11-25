@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import './CardProyecto.css'
 import ProjectModal from './ProjectModal'
 
-function CardProyecto({ img_path, Nombre, Rol, Descripcion, id, index = 0 }) {
+function CardProyecto({ img_path, Nombre, Rol, Descripcion, id, index = 0, resumen, tecnologias, link }) {
   const [isModalOpen, setIsModalOpen] = useState(false)
 
   const handleOpenModal = () => {
@@ -24,6 +24,8 @@ function CardProyecto({ img_path, Nombre, Rol, Descripcion, id, index = 0 }) {
         viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 0.6, delay: index * 0.15 }}
         whileHover={{ y: -10, transition: { duration: 0.3 } }}
+        onClick={handleOpenModal}
+        style={{ cursor: 'pointer' }}
       >
         <div className="card-proyecto-imagen">
           <img src={img_path} />
@@ -41,7 +43,7 @@ function CardProyecto({ img_path, Nombre, Rol, Descripcion, id, index = 0 }) {
 
       {isModalOpen && (
         <ProjectModal 
-          project={{ img_path, Nombre, Rol, Descripcion, id }}
+          project={{ img_path, Nombre, Rol, Descripcion, id, resumen, tecnologias, link }}
           onClose={handleCloseModal}
         />
       )}

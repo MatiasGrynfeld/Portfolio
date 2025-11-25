@@ -79,6 +79,24 @@ function ProjectModal({ project, onClose }) {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
+          {project.link && (
+            <motion.div
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, delay: 0.3 }}
+              style={{ marginBottom: '1rem' }}
+            >
+              <a 
+                href={project.link} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="modal-visit-button"
+              >
+                Visitar Proyecto
+              </a>
+            </motion.div>
+          )}
+          
           <motion.img 
             src={project.img_path} 
             alt={project.Nombre} 
@@ -96,13 +114,7 @@ function ProjectModal({ project, onClose }) {
           >
             <h3 className="modal-section-title">Resumen del Proyecto</h3>
             <p className="modal-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            </p>
-            <p className="modal-text">
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+              {project.resumen}
             </p>
           </motion.div>
 
@@ -112,91 +124,16 @@ function ProjectModal({ project, onClose }) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.5 }}
           >
-            <h3 className="modal-section-title">Desafíos y Soluciones</h3>
-            <p className="modal-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-            </p>
-            <ul className="modal-list">
-              <li>Desafío técnico principal y cómo fue resuelto mediante innovación</li>
-              <li>Optimización de rendimiento que resultó en mejoras significativas</li>
-              <li>Integración compleja de sistemas que requirió soluciones creativas</li>
-              <li>Escalabilidad y arquitectura diseñada para crecimiento futuro</li>
-            </ul>
-          </motion.div>
-
-          <motion.div 
-            className="modal-section"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.6 }}
-          >
             <h3 className="modal-section-title">Tecnologías Utilizadas</h3>
             <div className="modal-tags">
-              <span className="modal-tag">Python</span>
-              <span className="modal-tag">TensorFlow</span>
-              <span className="modal-tag">React</span>
-              <span className="modal-tag">Node.js</span>
-              <span className="modal-tag">PostgreSQL</span>
-              <span className="modal-tag">Docker</span>
-              <span className="modal-tag">AWS</span>
+              {project.tecnologias && project.tecnologias.length > 0 ? (
+                project.tecnologias.map((tech, index) => (
+                  <span key={index} className="modal-tag">{tech}</span>
+                ))
+              ) : (
+                <p></p>
+              )}
             </div>
-          </motion.div>
-
-          <motion.div 
-            className="modal-section"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.7 }}
-          >
-            <h3 className="modal-section-title">Resultados e Impacto</h3>
-            <p className="modal-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Cras non velit nec nisi vulputate nonummy. 
-              Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.
-            </p>
-            <div className="modal-stats">
-              <div className="modal-stat">
-                <p className="modal-stat-number">95%</p>
-                <p className="modal-stat-label">Precisión</p>
-              </div>
-              <div className="modal-stat">
-                <p className="modal-stat-number">5000+</p>
-                <p className="modal-stat-label">Usuarios</p>
-              </div>
-              <div className="modal-stat">
-                <p className="modal-stat-number">4 Meses</p>
-                <p className="modal-stat-label">Desarrollo</p>
-              </div>
-            </div>
-          </motion.div>
-
-          <motion.div 
-            className="modal-section"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.8 }}
-          >
-            <h3 className="modal-section-title">Aprendizajes Clave</h3>
-            <ul className="modal-list">
-              <li>Experiencia práctica en desarrollo de inteligencia artificial aplicada</li>
-              <li>Trabajo en equipo y metodologías ágiles de desarrollo</li>
-              <li>Diseño de arquitectura escalable y mantenible</li>
-              <li>Gestión de proyectos complejos con múltiples stakeholders</li>
-              <li>Presentación de soluciones técnicas a audiencias diversas</li>
-            </ul>
-          </motion.div>
-
-          <motion.div 
-            className="modal-section"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.9 }}
-          >
-            <h3 className="modal-section-title">Enlaces y Recursos</h3>
-            <p className="modal-text">
-              Repositorio GitHub: <strong>github.com/usuario/proyecto</strong><br/>
-              Demostración en vivo: <strong>proyecto-demo.com</strong><br/>
-              Documentación técnica: <strong>docs.proyecto.com</strong>
-            </p>
           </motion.div>
         </motion.div>
       </motion.div>

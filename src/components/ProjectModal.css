@@ -126,6 +126,26 @@
   padding: 2rem 3rem 3rem 3rem;
 }
 
+.modal-visit-button {
+  display: inline-block;
+  background: var(--Elementos-Graficos);
+  color: white;
+  text-decoration: none;
+  padding: 1vh 1vw;
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 3px solid var(--Elementos-Graficos);
+}
+
+.modal-visit-button:hover {
+  background: white;
+  color: var(--Elementos-Graficos);
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(2, 137, 75, 0.3);
+}
+
 .modal-image {
   width: 100%;
   border-radius: 30px;
